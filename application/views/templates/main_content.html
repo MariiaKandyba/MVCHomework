@@ -1,0 +1,24 @@
+<div class="taskContainer" style='background-color: ###BACKGROUNDCOLOR###; color: ###COLOR###;'>
+  <div class="taskHeader">###TITLE###</div>
+  <div class="taskDescription">Description: ###DESCRIPTION###</div>
+  <div class="taskDate">Due Date: ###DATE###</div>
+
+  
+  <div class="checkboxLabel">
+    <form id="taskForm_###ID###" class="taskForm" action="task/check" method="post">
+      <input type="hidden" name="id" value="###ID###">
+      <input type="checkbox" name="is_done" class="isDoneCheckbox" ###ISDONE###>
+      <label for="isDone_###ID###">Mark as Done</label>
+      <button type="submit" class="submitButton">Submit</button>
+    </form>
+  </div>
+  <form action="task/delete" method="post">
+    <input type="hidden" name="id" value="###ID###">
+    <button type="submit" class="deleteButton">Delete</button>
+  </form>
+</div>
+
+<script src="/js/checkbox_check.js"></script>
+
+
+

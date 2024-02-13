@@ -1,0 +1,53 @@
+body{
+  display: flex;
+  flex-direction: column;
+}
+#createBTN{
+  width: 200px;
+  margin: 20px;
+  align-self: center;
+}
+.taskContainer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .taskHeader {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .taskDescription, .taskDate {
+    margin-bottom: 5px;
+  }
+
+  .deleteButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  .checkboxLabel input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  .submitButton {
+    display: none;
+  }
